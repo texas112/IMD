@@ -12,20 +12,92 @@
 		5C1AEE931EE5C87D00AC08CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C1AEE911EE5C87D00AC08CF /* Main.storyboard */; };
 		5C1AEE951EE5C87D00AC08CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C1AEE941EE5C87D00AC08CF /* Assets.xcassets */; };
 		5C1AEE981EE5C87D00AC08CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C1AEE961EE5C87D00AC08CF /* LaunchScreen.storyboard */; };
+		5C2507CC1FBCB7590017D084 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C2507CA1FBCB7590017D084 /* Interface.storyboard */; };
+		5C2507CE1FBCB7590017D084 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C2507CD1FBCB7590017D084 /* Assets.xcassets */; };
+		5C2507D51FBCB7590017D084 /* IMDmini Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5C2507D41FBCB7590017D084 /* IMDmini Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5C2507DA1FBCB7590017D084 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2507D91FBCB7590017D084 /* InterfaceController.swift */; };
+		5C2507DC1FBCB7590017D084 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2507DB1FBCB7590017D084 /* ExtensionDelegate.swift */; };
+		5C2507DE1FBCB7590017D084 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2507DD1FBCB7590017D084 /* NotificationController.swift */; };
+		5C2507E01FBCB75A0017D084 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C2507DF1FBCB75A0017D084 /* Assets.xcassets */; };
+		5C2507E51FBCB75A0017D084 /* IMDmini.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 5C2507C81FBCB7590017D084 /* IMDmini.app */; };
+		5C27FE861F167C39004A5BA2 /* IMDTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C27FE851F167C39004A5BA2 /* IMDTableViewCell.swift */; };
+		5C4152271FD1C30E001A5868 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5C4152261FD1C30E001A5868 /* Settings.bundle */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5C2507D61FBCB7590017D084 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C1AEE821EE5C87D00AC08CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C2507D31FBCB7590017D084;
+			remoteInfo = "IMDmini Extension";
+		};
+		5C2507E31FBCB75A0017D084 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C1AEE821EE5C87D00AC08CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C2507C71FBCB7590017D084;
+			remoteInfo = IMDmini;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5C2507EB1FBCB75A0017D084 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5C2507D51FBCB7590017D084 /* IMDmini Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C2507ED1FBCB75A0017D084 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				5C2507E51FBCB75A0017D084 /* IMDmini.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5C1AEE8A1EE5C87D00AC08CF /* IMD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C1AEE8D1EE5C87D00AC08CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5C1AEE8F1EE5C87D00AC08CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5C1AEE8F1EE5C87D00AC08CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		5C1AEE921EE5C87D00AC08CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5C1AEE941EE5C87D00AC08CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C1AEE971EE5C87D00AC08CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C1AEE991EE5C87D00AC08CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C2507C81FBCB7590017D084 /* IMDmini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMDmini.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C2507CB1FBCB7590017D084 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		5C2507CD1FBCB7590017D084 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5C2507CF1FBCB7590017D084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C2507D41FBCB7590017D084 /* IMDmini Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "IMDmini Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C2507D91FBCB7590017D084 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		5C2507DB1FBCB7590017D084 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		5C2507DD1FBCB7590017D084 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		5C2507DF1FBCB75A0017D084 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5C2507E11FBCB75A0017D084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C2507E21FBCB75A0017D084 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		5C27FE851F167C39004A5BA2 /* IMDTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMDTableViewCell.swift; sourceTree = "<group>"; };
+		5C4152261FD1C30E001A5868 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5C1AEE871EE5C87D00AC08CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C2507D11FBCB7590017D084 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				5C1AEE8C1EE5C87D00AC08CF /* IMD */,
+				5C2507C91FBCB7590017D084 /* IMDmini */,
+				5C2507D81FBCB7590017D084 /* IMDmini Extension */,
 				5C1AEE8B1EE5C87D00AC08CF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				5C1AEE8A1EE5C87D00AC08CF /* IMD.app */,
+				5C2507C81FBCB7590017D084 /* IMDmini.app */,
+				5C2507D41FBCB7590017D084 /* IMDmini Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,12 +132,37 @@
 			children = (
 				5C1AEE8D1EE5C87D00AC08CF /* AppDelegate.swift */,
 				5C1AEE8F1EE5C87D00AC08CF /* ViewController.swift */,
+				5C4152261FD1C30E001A5868 /* Settings.bundle */,
 				5C1AEE911EE5C87D00AC08CF /* Main.storyboard */,
+				5C27FE851F167C39004A5BA2 /* IMDTableViewCell.swift */,
 				5C1AEE941EE5C87D00AC08CF /* Assets.xcassets */,
 				5C1AEE961EE5C87D00AC08CF /* LaunchScreen.storyboard */,
 				5C1AEE991EE5C87D00AC08CF /* Info.plist */,
 			);
 			path = IMD;
+			sourceTree = "<group>";
+		};
+		5C2507C91FBCB7590017D084 /* IMDmini */ = {
+			isa = PBXGroup;
+			children = (
+				5C2507CA1FBCB7590017D084 /* Interface.storyboard */,
+				5C2507CD1FBCB7590017D084 /* Assets.xcassets */,
+				5C2507CF1FBCB7590017D084 /* Info.plist */,
+			);
+			path = IMDmini;
+			sourceTree = "<group>";
+		};
+		5C2507D81FBCB7590017D084 /* IMDmini Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5C2507D91FBCB7590017D084 /* InterfaceController.swift */,
+				5C2507DB1FBCB7590017D084 /* ExtensionDelegate.swift */,
+				5C2507DD1FBCB7590017D084 /* NotificationController.swift */,
+				5C2507DF1FBCB75A0017D084 /* Assets.xcassets */,
+				5C2507E11FBCB75A0017D084 /* Info.plist */,
+				5C2507E21FBCB75A0017D084 /* PushNotificationPayload.apns */,
+			);
+			path = "IMDmini Extension";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +175,51 @@
 				5C1AEE861EE5C87D00AC08CF /* Sources */,
 				5C1AEE871EE5C87D00AC08CF /* Frameworks */,
 				5C1AEE881EE5C87D00AC08CF /* Resources */,
+				5C2507ED1FBCB75A0017D084 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5C2507E41FBCB75A0017D084 /* PBXTargetDependency */,
 			);
 			name = IMD;
 			productName = IMD;
 			productReference = 5C1AEE8A1EE5C87D00AC08CF /* IMD.app */;
 			productType = "com.apple.product-type.application";
+		};
+		5C2507C71FBCB7590017D084 /* IMDmini */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C2507EC1FBCB75A0017D084 /* Build configuration list for PBXNativeTarget "IMDmini" */;
+			buildPhases = (
+				5C2507C61FBCB7590017D084 /* Resources */,
+				5C2507EB1FBCB75A0017D084 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C2507D71FBCB7590017D084 /* PBXTargetDependency */,
+			);
+			name = IMDmini;
+			productName = IMDmini;
+			productReference = 5C2507C81FBCB7590017D084 /* IMDmini.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		5C2507D31FBCB7590017D084 /* IMDmini Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C2507EA1FBCB75A0017D084 /* Build configuration list for PBXNativeTarget "IMDmini Extension" */;
+			buildPhases = (
+				5C2507D01FBCB7590017D084 /* Sources */,
+				5C2507D11FBCB7590017D084 /* Frameworks */,
+				5C2507D21FBCB7590017D084 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IMDmini Extension";
+			productName = "IMDmini Extension";
+			productReference = 5C2507D41FBCB7590017D084 /* IMDmini Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -90,12 +227,24 @@
 		5C1AEE821EE5C87D00AC08CF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Loren Larson";
 				TargetAttributes = {
 					5C1AEE891EE5C87D00AC08CF = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = V8Q9K7U2HD;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+					5C2507C71FBCB7590017D084 = {
+						CreatedOnToolsVersion = 9.1;
+						DevelopmentTeam = V8Q9K7U2HD;
+						ProvisioningStyle = Automatic;
+					};
+					5C2507D31FBCB7590017D084 = {
+						CreatedOnToolsVersion = 9.1;
+						DevelopmentTeam = V8Q9K7U2HD;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -114,6 +263,8 @@
 			projectRoot = "";
 			targets = (
 				5C1AEE891EE5C87D00AC08CF /* IMD */,
+				5C2507C71FBCB7590017D084 /* IMDmini */,
+				5C2507D31FBCB7590017D084 /* IMDmini Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -123,9 +274,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C4152271FD1C30E001A5868 /* Settings.bundle in Resources */,
 				5C1AEE981EE5C87D00AC08CF /* LaunchScreen.storyboard in Resources */,
 				5C1AEE951EE5C87D00AC08CF /* Assets.xcassets in Resources */,
 				5C1AEE931EE5C87D00AC08CF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C2507C61FBCB7590017D084 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C2507CE1FBCB7590017D084 /* Assets.xcassets in Resources */,
+				5C2507CC1FBCB7590017D084 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C2507D21FBCB7590017D084 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C2507E01FBCB75A0017D084 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,12 +305,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C27FE861F167C39004A5BA2 /* IMDTableViewCell.swift in Sources */,
 				5C1AEE901EE5C87D00AC08CF /* ViewController.swift in Sources */,
 				5C1AEE8E1EE5C87D00AC08CF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5C2507D01FBCB7590017D084 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C2507DE1FBCB7590017D084 /* NotificationController.swift in Sources */,
+				5C2507DC1FBCB7590017D084 /* ExtensionDelegate.swift in Sources */,
+				5C2507DA1FBCB7590017D084 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5C2507D71FBCB7590017D084 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C2507D31FBCB7590017D084 /* IMDmini Extension */;
+			targetProxy = 5C2507D61FBCB7590017D084 /* PBXContainerItemProxy */;
+		};
+		5C2507E41FBCB75A0017D084 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C2507C71FBCB7590017D084 /* IMDmini */;
+			targetProxy = 5C2507E31FBCB75A0017D084 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5C1AEE911EE5C87D00AC08CF /* Main.storyboard */ = {
@@ -160,6 +353,14 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		5C2507CA1FBCB7590017D084 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C2507CB1FBCB7590017D084 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -173,7 +374,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -181,7 +384,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -224,7 +431,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -232,7 +441,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -262,11 +475,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V8Q9K7U2HD;
 				INFOPLIST_FILE = IMD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lorenlarson.IMD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -274,11 +489,99 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V8Q9K7U2HD;
 				INFOPLIST_FILE = IMD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lorenlarson.IMD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		5C2507E61FBCB75A0017D084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V8Q9K7U2HD;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IBSC_MODULE = IMDmini_Extension;
+				INFOPLIST_FILE = IMDmini/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lorenlarson.IMD.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.1;
+			};
+			name = Debug;
+		};
+		5C2507E71FBCB75A0017D084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V8Q9K7U2HD;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IBSC_MODULE = IMDmini_Extension;
+				INFOPLIST_FILE = IMDmini/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lorenlarson.IMD.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.1;
+			};
+			name = Release;
+		};
+		5C2507E81FBCB75A0017D084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V8Q9K7U2HD;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "IMDmini Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lorenlarson.IMD.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.1;
+			};
+			name = Debug;
+		};
+		5C2507E91FBCB75A0017D084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V8Q9K7U2HD;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "IMDmini Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lorenlarson.IMD.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.1;
 			};
 			name = Release;
 		};
@@ -301,6 +604,25 @@
 				5C1AEE9E1EE5C87D00AC08CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C2507EA1FBCB75A0017D084 /* Build configuration list for PBXNativeTarget "IMDmini Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C2507E81FBCB75A0017D084 /* Debug */,
+				5C2507E91FBCB75A0017D084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C2507EC1FBCB75A0017D084 /* Build configuration list for PBXNativeTarget "IMDmini" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C2507E61FBCB75A0017D084 /* Debug */,
+				5C2507E71FBCB75A0017D084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
