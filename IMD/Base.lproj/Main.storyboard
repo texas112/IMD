@@ -1,14 +1,26 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Courier.ttc">
+            <string>Courier-Bold</string>
+        </array>
+        <array key="CourierNewBold.ttf">
+            <string>CourierNewPS-BoldMT</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mainIMD" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="IMD" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +28,812 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Q55-GE-jxk" userLabel="Stack View - Buttons">
+                                <rect key="frame" x="0.0" y="20" width="375" height="314.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CRZ-N6-uBZ" userLabel="Stack View - Band A Labels">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="12"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Band A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nj7-Pa-IGB">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="12"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="12" id="iRX-nd-CWa"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="kU8-hK-X02" userLabel="Stack View - Band A">
+                                        <rect key="frame" x="0.0" y="12" width="375" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="5725" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dnu-RU-Zr9" userLabel="A1">
+                                                <rect key="frame" x="0.0" y="0.0" width="47" height="40"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="14"/>
+                                                <color key="tintColor" red="0.0" green="0.68335729837500003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="5725">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="processFreq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u4k-hQ-qd0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5745" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFG-FB-T7s" userLabel="A2">
+                                                <rect key="frame" x="47" y="0.0" width="47" height="40"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="14"/>
+                                                <color key="tintColor" red="0.0" green="0.68335729837500003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="5745">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="processFreq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VSk-NJ-y1V"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5765" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zlS-Ld-Gqh" userLabel="A3">
+                                                <rect key="frame" x="94" y="0.0" width="46.5" height="40"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="14"/>
+                                                <color key="tintColor" red="0.0" green="0.68335729837500003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="5765">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="processFreq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DXX-b4-EfC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5785" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gS6-XA-I66" userLabel="A4">
+                                                <rect key="frame" x="140.5" y="0.0" width="47" height="40"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="14"/>
+                                                <color key="tintColor" red="0.0" green="0.68335729837500003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="5785">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="processFreq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lih-nD-3U6"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5805" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xi7-Fl-lea" userLabel="A5">
+                                                <rect key="frame" x="187.5" y="0.0" width="47" height="40"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="14"/>
+                                                <color key="tintColor" red="0.0" green="0.68335729837500003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="5805">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="processFreq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wag-e2-3SP"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5825" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RX8-FK-UeK" userLabel="A6">
+                                                <rect key="frame" x="234.5" y="0.0" width="47" height="40"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="14"/>
+                                                <color key="tintColor" red="0.0" green="0.68335729837500003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="5825">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="processFreq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sGi-LJ-jA5"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5845" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F32-Rk-f3m" userLabel="A7">
+                                                <rect key="frame" x="281.5" y="0.0" width="46.5" height="40"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="14"/>
+                                                <color key="tintColor" red="0.0" green="0.68335729837500003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="5845">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="processFreq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AaL-zi-sDY"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5865" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIZ-mA-M7J" userLabel="A8">
+                                                <rect key="frame" x="328" y="0.0" width="47" height="40"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="14"/>
+                                                <color key="tintColor" red="0.0" green="0.68335729837500003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="5865">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="processFreq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DBM-Vl-xnZ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="iWy-M7-ixU"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QY7-kB-OaW" userLabel="Stack View - Band B Label">
+                                        <rect key="frame" x="0.0" y="52" width="375" height="12"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Band B" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a80-mN-a5k">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="12"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="12" id="vqn-Ib-wWs"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="uOu-GF-xWO" userLabel="Stack View - Band B">
+                                        <rect key="frame" x="0.0" y="64" width="375" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="5733" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pv1-Nh-tQV" userLabel="B1">
+                                                <rect key="frame" x="0.0" y="0.0" width="47" height="40"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="14"/>
+                                                <color key="tintColor" red="0.0" green="0.68235294117647061" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="5733">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="processFreq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gFG-ac-1po"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5752" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0LC-BP-v1w" userLabel="B2">
+                                                <rect key="frame" x="47" y="0.0" width="47" height="40"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="14"/>
+                                                <color key="tintColor" red="0.0" green="0.68235294117647061" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="5752">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="processFreq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I1K-BQ-Vfe"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5771" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vgm-sT-Lte" userLabel="B3">
+                                                <rect key="frame" x="94" y="0.0" width="46.5" height="40"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="14"/>
+                                                <color key="tintColor" red="0.0" green="0.68235294117647061" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="5771">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="processFreq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HLv-nE-t8b"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5790" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bs-9l-7vU" userLabel="B4">
+                                                <rect key="frame" x="140.5" y="0.0" width="47" height="40"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="14"/>
+                                                <color key="tintColor" red="0.0" green="0.68235294117647061" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="5790">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="processFreq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pNd-Z2-0c4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5809" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ykb-84-oLW" userLabel="B5">
+                                                <rect key="frame" x="187.5" y="0.0" width="47" height="40"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="14"/>
+                                                <color key="tintColor" red="0.0" green="0.68235294117647061" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="5809">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="processFreq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dPX-XO-CRv"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5828" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hd9-GM-CyB" userLabel="B6">
+                                                <rect key="frame" x="234.5" y="0.0" width="47" height="40"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="14"/>
+                                                <color key="tintColor" red="0.0" green="0.68235294117647061" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="5828">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="processFreq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9c6-3G-7eb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5847" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRw-46-a3D" userLabel="B7">
+                                                <rect key="frame" x="281.5" y="0.0" width="46.5" height="40"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="14"/>
+                                                <color key="tintColor" red="0.0" green="0.68235294117647061" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="5847">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="processFreq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ma9-7g-aNt"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5866" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bd0-gd-2ue" userLabel="B8">
+                                                <rect key="frame" x="328" y="0.0" width="47" height="40"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="14"/>
+                                                <color key="tintColor" red="0.0" green="0.68235294117647061" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="5866">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="processFreq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xnO-2m-ndA"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="cEp-Jx-ayd"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zMa-h9-sUw" userLabel="Stack View - Band E Label">
+                                        <rect key="frame" x="0.0" y="104" width="375" height="12"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Band E" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jsf-QK-xLc">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="12"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="12" id="Ycx-Lu-cPh"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="oHw-PR-Ivc" userLabel="Stack View - Band E">
+                                        <rect key="frame" x="0.0" y="116" width="375" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="5705" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f18-9E-Tra" userLabel="E1">
+                                                <rect key="frame" x="0.0" y="0.0" width="47" height="40"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="14"/>
+                                                <color key="tintColor" red="0.0" green="0.68235294117647061" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="5705">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="processFreq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pv7-fp-dPB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5685" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypW-iK-X1g" userLabel="E2">
+                                                <rect key="frame" x="47" y="0.0" width="47" height="40"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="14"/>
+                                                <color key="tintColor" red="0.0" green="0.68235294117647061" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="5685">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="processFreq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lQJ-dd-8WG"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5665" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9f3-oZ-ZTN" userLabel="E3">
+                                                <rect key="frame" x="94" y="0.0" width="46.5" height="40"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="14"/>
+                                                <color key="tintColor" red="0.0" green="0.68235294117647061" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="5665">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="processFreq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vrZ-k6-Iw3"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5645" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVY-Nl-7Jc" userLabel="E4">
+                                                <rect key="frame" x="140.5" y="0.0" width="47" height="40"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="14"/>
+                                                <color key="tintColor" red="0.0" green="0.68235294117647061" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="5645">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="processFreq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9rb-d4-Ctt"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5885" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fA6-9Z-YE8" userLabel="E5">
+                                                <rect key="frame" x="187.5" y="0.0" width="47" height="40"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="14"/>
+                                                <color key="tintColor" red="0.0" green="0.68235294117647061" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="5885">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="processFreq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RPf-ec-pCT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5905" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZf-OU-oaH" userLabel="E6">
+                                                <rect key="frame" x="234.5" y="0.0" width="47" height="40"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="14"/>
+                                                <color key="tintColor" red="0.0" green="0.68235294117647061" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="5905">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="processFreq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dWv-XO-Wtz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5925" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qNL-Pa-QaJ" userLabel="E7">
+                                                <rect key="frame" x="281.5" y="0.0" width="46.5" height="40"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="14"/>
+                                                <color key="tintColor" red="0.0" green="0.68235294117647061" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="5925">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="processFreq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CaZ-F0-YY2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5945" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXS-cv-kj5" userLabel="E8">
+                                                <rect key="frame" x="328" y="0.0" width="47" height="40"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="14"/>
+                                                <color key="tintColor" red="0.0" green="0.68235294117647061" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="5945">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="processFreq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nUP-S3-4D7"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="isO-Bb-pHc"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gos-kM-moR" userLabel="Stack View - Band F Label">
+                                        <rect key="frame" x="0.0" y="156" width="375" height="12"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Band F" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zij-e0-hcj">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="12"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="12" id="P49-VW-jhI"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0XE-Fc-4Dz" userLabel="Stack View - Band F">
+                                        <rect key="frame" x="0.0" y="168" width="375" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="5740" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o17-KC-kQa" userLabel="F1">
+                                                <rect key="frame" x="0.0" y="0.0" width="47" height="40"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="14"/>
+                                                <color key="tintColor" red="0.0" green="0.68235294117647061" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="5740">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="processFreq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y7T-46-PHS"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5760" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYb-tU-Lgr" userLabel="F2">
+                                                <rect key="frame" x="47" y="0.0" width="47" height="40"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="14"/>
+                                                <color key="tintColor" red="0.0" green="0.68235294117647061" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="5760">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="processFreq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3uW-XO-aez"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5780" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZT-WC-1sh" userLabel="F3">
+                                                <rect key="frame" x="94" y="0.0" width="46.5" height="40"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="14"/>
+                                                <color key="tintColor" red="0.0" green="0.68235294117647061" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="5780">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="processFreq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nf4-6l-zUC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5800" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E94-vK-hqQ" userLabel="F4">
+                                                <rect key="frame" x="140.5" y="0.0" width="47" height="40"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="14"/>
+                                                <color key="tintColor" red="0.0" green="0.68235294117647061" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="5800">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="processFreq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hJE-Xg-WVi"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5820" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iet-zz-7Ja" userLabel="F5">
+                                                <rect key="frame" x="187.5" y="0.0" width="47" height="40"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="14"/>
+                                                <color key="tintColor" red="0.0" green="0.68235294117647061" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="5820">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="processFreq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8vb-bH-Rzj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5840" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Evl-1P-4FA" userLabel="F6">
+                                                <rect key="frame" x="234.5" y="0.0" width="47" height="40"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="14"/>
+                                                <color key="tintColor" red="0.0" green="0.68235294117647061" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="5840">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="processFreq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tk6-zv-fjc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5860" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Irb-uG-iam" userLabel="F7">
+                                                <rect key="frame" x="281.5" y="0.0" width="46.5" height="40"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="14"/>
+                                                <color key="tintColor" red="0.0" green="0.68235294117647061" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="5860">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="processFreq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FtQ-yk-nkH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5880" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ty-6z-O9y" userLabel="F8">
+                                                <rect key="frame" x="328" y="0.0" width="47" height="40"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="14"/>
+                                                <color key="tintColor" red="0.0" green="0.68235294117647061" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="5880">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="processFreq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PgB-HS-qZ0"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="bxf-ul-81u"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oLJ-E8-yh9" userLabel="Stack View - Raceband Label">
+                                        <rect key="frame" x="0.0" y="208" width="375" height="12"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Band R (C) - Raceband" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BWj-TY-Elu">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="12"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="12" id="UQJ-16-rVj"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="pNK-xd-I5B" userLabel="Stack View - Raceband">
+                                        <rect key="frame" x="0.0" y="220" width="375" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="5658" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOg-ao-gtU" userLabel="R1">
+                                                <rect key="frame" x="0.0" y="0.0" width="47" height="40"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="14"/>
+                                                <color key="tintColor" red="0.0" green="0.68235294117647061" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="5658">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="processFreq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Qw-qE-geD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5695" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzq-7A-xCf" userLabel="R2">
+                                                <rect key="frame" x="47" y="0.0" width="47" height="40"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="14"/>
+                                                <color key="tintColor" red="0.0" green="0.68235294117647061" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="5695">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="processFreq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lwF-3l-D5s"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5732" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lww-3x-GBx" userLabel="R3">
+                                                <rect key="frame" x="94" y="0.0" width="46.5" height="40"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="14"/>
+                                                <color key="tintColor" red="0.0" green="0.68235294117647061" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="5732">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="processFreq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9vt-es-r9W"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5769" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ps-M1-t3X" userLabel="R4">
+                                                <rect key="frame" x="140.5" y="0.0" width="47" height="40"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="14"/>
+                                                <color key="tintColor" red="0.0" green="0.68235294117647061" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="5769">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="processFreq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gHN-6y-xzQ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5806" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m25-dX-IL2" userLabel="R5">
+                                                <rect key="frame" x="187.5" y="0.0" width="47" height="40"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="14"/>
+                                                <color key="tintColor" red="0.0" green="0.68235294117647061" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="5806">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="processFreq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VAg-iQ-0vL"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5843" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UBG-SC-Wok" userLabel="R6">
+                                                <rect key="frame" x="234.5" y="0.0" width="47" height="40"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="14"/>
+                                                <color key="tintColor" red="0.0" green="0.68235294117647061" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="5843">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="processFreq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h0n-nT-TDo"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5880" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eux-9b-cYf" userLabel="R7">
+                                                <rect key="frame" x="281.5" y="0.0" width="46.5" height="40"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="14"/>
+                                                <color key="tintColor" red="0.0" green="0.68235294117647061" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="5880">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="processFreq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ATv-JR-ZIY"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5917" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMs-Fm-DUH" userLabel="R8">
+                                                <rect key="frame" x="328" y="0.0" width="47" height="40"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="14"/>
+                                                <color key="tintColor" red="0.0" green="0.68235294117647061" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="5917">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="processFreq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WTP-xR-D7e"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="b9H-5L-VPW"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="6En-dv-1CA" userLabel="Stack View - Channel Numbers">
+                                        <rect key="frame" x="0.0" y="260" width="375" height="14.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gby-vm-Tky">
+                                                <rect key="frame" x="0.0" y="0.0" width="47" height="14.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BqN-Ga-und">
+                                                <rect key="frame" x="47" y="0.0" width="47" height="14.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Fa-s2-oO3">
+                                                <rect key="frame" x="94" y="0.0" width="46.5" height="14.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGC-Xg-ehv">
+                                                <rect key="frame" x="140.5" y="0.0" width="47" height="14.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3y-kt-OaA">
+                                                <rect key="frame" x="187.5" y="0.0" width="47" height="14.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="quG-x4-mKb">
+                                                <rect key="frame" x="234.5" y="0.0" width="47" height="14.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnC-Yz-8K0">
+                                                <rect key="frame" x="281.5" y="0.0" width="46.5" height="14.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GdF-pt-6mF">
+                                                <rect key="frame" x="328" y="0.0" width="47" height="14.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="14.5" id="dxv-2Z-nYk"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="TOl-WC-ubp" userLabel="Stack View - Clear">
+                                        <rect key="frame" x="0.0" y="274.5" width="375" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VwV-Zi-ch6">
+                                                <rect key="frame" x="0.0" y="0.0" width="125" height="40"/>
+                                                <state key="normal" title="Clear"/>
+                                                <connections>
+                                                    <action selector="clearFreq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0n0-9c-1jx"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ef0-Vu-OyR">
+                                                <rect key="frame" x="125" y="0.0" width="125" height="40"/>
+                                                <state key="normal" title="Settings"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ay9-tY-EAp">
+                                                <rect key="frame" x="250" y="0.0" width="125" height="40"/>
+                                                <state key="normal" title="Info"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="wbZ-C7-n8E"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="pNK-xd-I5B" firstAttribute="leading" secondItem="Q55-GE-jxk" secondAttribute="leading" id="0jd-IK-3s7"/>
+                                    <constraint firstAttribute="trailing" secondItem="oHw-PR-Ivc" secondAttribute="trailing" id="18t-Pl-0gc"/>
+                                    <constraint firstItem="kU8-hK-X02" firstAttribute="leading" secondItem="Q55-GE-jxk" secondAttribute="leading" id="1bk-t3-I9f"/>
+                                    <constraint firstItem="oHw-PR-Ivc" firstAttribute="leading" secondItem="Q55-GE-jxk" secondAttribute="leading" id="1yQ-XW-MdB"/>
+                                    <constraint firstAttribute="trailing" secondItem="TOl-WC-ubp" secondAttribute="trailing" id="2lS-KK-ZLF"/>
+                                    <constraint firstAttribute="trailing" secondItem="oLJ-E8-yh9" secondAttribute="trailing" id="4DV-dI-OQK"/>
+                                    <constraint firstAttribute="trailing" secondItem="uOu-GF-xWO" secondAttribute="trailing" id="8OT-DD-eK9"/>
+                                    <constraint firstItem="0XE-Fc-4Dz" firstAttribute="leading" secondItem="Q55-GE-jxk" secondAttribute="leading" id="Cyw-uQ-K8S"/>
+                                    <constraint firstItem="CRZ-N6-uBZ" firstAttribute="leading" secondItem="Q55-GE-jxk" secondAttribute="leading" id="O5m-eE-WNf"/>
+                                    <constraint firstAttribute="trailing" secondItem="kU8-hK-X02" secondAttribute="trailing" id="OcU-vK-81Z"/>
+                                    <constraint firstItem="QY7-kB-OaW" firstAttribute="leading" secondItem="Q55-GE-jxk" secondAttribute="leading" id="RlQ-PY-Spr"/>
+                                    <constraint firstAttribute="trailing" secondItem="zMa-h9-sUw" secondAttribute="trailing" id="ToH-qE-WUt"/>
+                                    <constraint firstAttribute="trailing" secondItem="6En-dv-1CA" secondAttribute="trailing" id="YDE-J0-iz9"/>
+                                    <constraint firstItem="6En-dv-1CA" firstAttribute="leading" secondItem="Q55-GE-jxk" secondAttribute="leading" id="ZtE-Uw-lkb"/>
+                                    <constraint firstAttribute="trailing" secondItem="QY7-kB-OaW" secondAttribute="trailing" id="b8p-Oi-kKl"/>
+                                    <constraint firstAttribute="trailing" secondItem="pNK-xd-I5B" secondAttribute="trailing" id="cII-Zc-yhc"/>
+                                    <constraint firstAttribute="trailing" secondItem="gos-kM-moR" secondAttribute="trailing" id="gFT-qn-rKf"/>
+                                    <constraint firstItem="zMa-h9-sUw" firstAttribute="leading" secondItem="Q55-GE-jxk" secondAttribute="leading" id="gT1-oM-xcU"/>
+                                    <constraint firstItem="TOl-WC-ubp" firstAttribute="leading" secondItem="Q55-GE-jxk" secondAttribute="leading" id="iTP-bN-ls8"/>
+                                    <constraint firstAttribute="trailing" secondItem="CRZ-N6-uBZ" secondAttribute="trailing" id="jWs-KI-Rng"/>
+                                    <constraint firstItem="uOu-GF-xWO" firstAttribute="leading" secondItem="Q55-GE-jxk" secondAttribute="leading" id="mwo-4s-eos"/>
+                                    <constraint firstItem="gos-kM-moR" firstAttribute="leading" secondItem="Q55-GE-jxk" secondAttribute="leading" id="oUo-87-zTZ"/>
+                                    <constraint firstItem="oLJ-E8-yh9" firstAttribute="leading" secondItem="Q55-GE-jxk" secondAttribute="leading" id="rIX-2f-dvq"/>
+                                    <constraint firstAttribute="trailing" secondItem="0XE-Fc-4Dz" secondAttribute="trailing" id="yhs-rT-Oy4"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9hs-s8-cYB" userLabel="Stack View - Freq Table">
+                                <rect key="frame" x="0.0" y="334.5" width="375" height="332.5"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="27" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7cP-5X-uDa">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="332.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <prototypes>
+                                            <tableViewCell hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="27" id="6hU-rj-Edd" customClass="IMDTableViewCell" customModule="IMD" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="375" height="27"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6hU-rj-Edd" id="oGH-AS-PJ7">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="27"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="nDf-Rd-eM0">
+                                                            <rect key="frame" x="20" y="0.0" width="335" height="27"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7M-MI-BQP">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="31" height="27"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apn-ri-geE">
+                                                                    <rect key="frame" x="98.5" y="0.0" width="40" height="27"/>
+                                                                    <accessibility key="accessibilityConfiguration">
+                                                                        <accessibilityTraits key="traits" button="YES" notEnabled="YES"/>
+                                                                    </accessibility>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="6z0-C3-TKY"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="14"/>
+                                                                    <color key="tintColor" red="0.0" green="0.68235294117647061" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <state key="normal" title="0000">
+                                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    </state>
+                                                                </button>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRh-IP-aeN">
+                                                                    <rect key="frame" x="205.5" y="0.0" width="31" height="27"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nhy-1p-1e6">
+                                                                    <rect key="frame" x="304" y="0.0" width="31" height="27"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="nDf-Rd-eM0" firstAttribute="centerY" secondItem="oGH-AS-PJ7" secondAttribute="centerY" id="LVb-0j-KmB"/>
+                                                        <constraint firstItem="nDf-Rd-eM0" firstAttribute="top" secondItem="oGH-AS-PJ7" secondAttribute="top" id="b1q-Tq-uOi"/>
+                                                        <constraint firstItem="nDf-Rd-eM0" firstAttribute="leading" secondItem="oGH-AS-PJ7" secondAttribute="leading" constant="20" symbolic="YES" id="dGt-YD-Z3e"/>
+                                                        <constraint firstAttribute="trailing" secondItem="nDf-Rd-eM0" secondAttribute="trailing" constant="20" symbolic="YES" id="jlS-ot-89P"/>
+                                                        <constraint firstItem="nDf-Rd-eM0" firstAttribute="centerX" secondItem="oGH-AS-PJ7" secondAttribute="centerX" id="saP-Ah-Olj"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="btnChan" destination="apn-ri-geE" id="JKg-QT-50H"/>
+                                                    <outlet property="imdFrequency" destination="h7M-MI-BQP" id="JKS-Xg-q6I"/>
+                                                    <outlet property="imdFrequency1" destination="jRh-IP-aeN" id="iau-Q5-eMV"/>
+                                                    <outlet property="imdFrequency2" destination="Nhy-1p-1e6" id="aKa-PO-OqX"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="q9E-QQ-ZK9"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="UUD-CI-zZy"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="7cP-5X-uDa" secondAttribute="trailing" id="BrS-UZ-vCx"/>
+                                    <constraint firstItem="7cP-5X-uDa" firstAttribute="centerX" secondItem="9hs-s8-cYB" secondAttribute="centerX" id="CGU-6b-IFK"/>
+                                    <constraint firstItem="7cP-5X-uDa" firstAttribute="leading" secondItem="9hs-s8-cYB" secondAttribute="leading" id="R3n-Ln-syQ"/>
+                                    <constraint firstItem="7cP-5X-uDa" firstAttribute="top" secondItem="9hs-s8-cYB" secondAttribute="top" id="RyT-RD-NwQ"/>
+                                    <constraint firstItem="7cP-5X-uDa" firstAttribute="centerY" secondItem="9hs-s8-cYB" secondAttribute="centerY" id="pd8-4M-I85"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="zx7-RN-Axi"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="zx7-RN-Axi"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="zx7-RN-Axi"/>
+                                        <exclude reference="BrS-UZ-vCx"/>
+                                        <exclude reference="CGU-6b-IFK"/>
+                                        <exclude reference="R3n-Ln-syQ"/>
+                                        <exclude reference="RyT-RD-NwQ"/>
+                                        <exclude reference="pd8-4M-I85"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Q55-GE-jxk" firstAttribute="trailing" secondItem="9hs-s8-cYB" secondAttribute="leading" id="1U7-Mz-t1E"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9hs-s8-cYB" secondAttribute="bottom" id="6eA-pz-cts"/>
+                            <constraint firstItem="Q55-GE-jxk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9rE-el-SEO"/>
+                            <constraint firstItem="9hs-s8-cYB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="AjX-wJ-REp"/>
+                            <constraint firstAttribute="trailing" secondItem="9hs-s8-cYB" secondAttribute="trailing" id="IAw-Ts-cwR"/>
+                            <constraint firstItem="9hs-s8-cYB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Rnb-e7-UeJ"/>
+                            <constraint firstItem="9hs-s8-cYB" firstAttribute="top" secondItem="Q55-GE-jxk" secondAttribute="bottom" id="Tea-My-ay8"/>
+                            <constraint firstItem="9hs-s8-cYB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Zp7-k9-1Zg"/>
+                            <constraint firstAttribute="trailing" secondItem="Q55-GE-jxk" secondAttribute="trailing" id="aTq-HG-zEs"/>
+                            <constraint firstItem="9hs-s8-cYB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dfj-fD-C0O"/>
+                            <constraint firstItem="Q55-GE-jxk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="oIE-yf-eJB"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="1U7-Mz-t1E"/>
+                                <exclude reference="AjX-wJ-REp"/>
+                                <exclude reference="Zp7-k9-1Zg"/>
+                                <exclude reference="dfj-fD-C0O"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="1U7-Mz-t1E"/>
+                                <exclude reference="aTq-HG-zEs"/>
+                                <include reference="AjX-wJ-REp"/>
+                                <exclude reference="Rnb-e7-UeJ"/>
+                                <exclude reference="Tea-My-ay8"/>
+                                <include reference="dfj-fD-C0O"/>
+                                <exclude reference="6eA-pz-cts"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="Zp7-k9-1Zg"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="freqTableView" destination="7cP-5X-uDa" id="iTx-hH-qbq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-551.20000000000005" y="8.5457271364317844"/>
         </scene>
     </scenes>
 </document>
